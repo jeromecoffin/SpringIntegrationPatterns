@@ -10,9 +10,9 @@ or
 
 Open this project in Intellij
 
-Run the main as a Java project: https://github.com/charroux/gettingStartedIntegration/blob/master/src/main/java/test/Main.java
+Run the main as a Java project: https://github.com/jeromecoffin/gettingStartedIntegration/blob/master/src/main/java/test/Main.java
 
-XML configuration files are into: https://github.com/charroux/gettingStartedIntegration/tree/master/src/main/resources
+XML configuration files are into: https://github.com/jeromecoffin/gettingStartedIntegration/tree/master/src/main/resources
 
 applicationContext.xml :
 
@@ -64,7 +64,7 @@ javaScriptService.xml
 	
 webServiceCalling.xml
 
-Existing Web Service project : https://github.com/charroux/webServiceForSpringIntegration
+Existing Web Service project : https://github.com/jeromecoffin/webServiceForSpringIntegration
 
 	-gateway
 	
