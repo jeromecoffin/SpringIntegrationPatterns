@@ -14,68 +14,58 @@ Run the main as a Java project: https://github.com/jeromecoffin/gettingStartedIn
 
 XML configuration files are into: https://github.com/jeromecoffin/gettingStartedIntegration/tree/master/src/main/resources
 
-applicationContext.xml :
+Spring Integration
+==================
 
-	- input file adapter
+# Checking out and Building
 
-	- channel
+To check out the project and build from the source, do the following:
 
-	- output file adapter
-	
-serviceActivator.xml
+    git clone git@github.com:jeromecoffin/SpringIntegrationPatterns.git
+    ./gradlew clean test
 
-	- input file adapter
+    or
 
-	- file to string transformer
+    ./gradlew clean testAll
 
-	- channel
+The latter runs additional tests (those annotated with `@LongRunningIntegrationTest`); it is a more thorough test but takes quite a lot longer to run.
 
-	- service activator (java program)
+Add `--continue` to the command to perform a complete build, even if there are failing tests in some modules; otherwise the build will stop after the current module(s) being built are completed.
 
-	- output file adapter
-	
-routing.xml
+**NOTE:** While Spring Integration runs with Java SE 8 or higher, a Java 11 compiler is required to build the project.
 
-	- input file adapter
-	
-	- json to object transformer
+To build and install jars into your local Maven cache:
 
-	- channel
-	
-	- router:
-	
-		- service activator
-		
-		- channel
-	
-	- aggregator:
-	
-	- outbound file adapter
-	
-	- json conversion
+    ./gradlew publishToMavenLocal
 
-javaScriptService.xml
 
-	- gateway
-	
-	- javascript
-	
-	- logger
-	
-webServiceCalling.xml
+# Using Eclipse or Spring Tool Suite (with BuildShip Plugin)
 
-Existing Web Service project : https://github.com/jeromecoffin/webServiceForSpringIntegration
+If you have the BuildShip plugin installed,
 
-	-gateway
-	
-	- web service call
-	
-	- logger
-	
-sqlDatabase.xml
+*File -> Import -> Gradle -> Existing Gradle Project*
 
-	- gateway
-	
-	- data base (hsqldb, h2...)
-	
-	- logger
+# Using Eclipse or Spring Tool Suite (when the BuildShip Plugin is not installed)
+
+To generate Eclipse metadata (.classpath and .project files, etc), do the following:
+
+    ./gradlew eclipse
+
+Once complete, you may then import the projects into Eclipse as usual:
+
+ *File -> Import -> General -> Existing projects into workspace*
+
+Browse to the *'spring-integration'* root directory. All projects should import
+free of errors.
+
+# Using IntelliJ IDEA
+
+To import the project into IntelliJ IDEA:
+
+File -> Open... -> and select build.gradle from spring-integration project root directory
+
+
+# Resources
+
+For more information, please visit the Spring Integration website at:
+[https://spring.io/projects/spring-integration](https://spring.io/projects/spring-integration/)
