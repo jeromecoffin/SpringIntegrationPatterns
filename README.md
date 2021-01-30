@@ -1,4 +1,4 @@
-# gettingStartedIntegration
+# SpringIntegrationPatterns
 
 Compatibility: Java 11
 
@@ -10,9 +10,9 @@ or
 
 Open this project in Intellij
 
-Run the main as a Java project: https://github.com/jeromecoffin/gettingStartedIntegration/blob/master/src/main/java/test/Main.java
+Run the main as a Java project: https://github.com/jeromecoffin/SpringIntegrationPatterns/blob/master/src/main/java/test/Main.java
 
-XML configuration files are into: https://github.com/jeromecoffin/gettingStartedIntegration/tree/master/src/main/resources
+XML configuration files are into: https://github.com/jeromecoffin/SpringIntegrationPatterns/tree/master/src/main/resources
 
 
 # Checking out and Building
