@@ -14,8 +14,6 @@ Run the main as a Java project: https://github.com/jeromecoffin/gettingStartedIn
 
 XML configuration files are into: https://github.com/jeromecoffin/gettingStartedIntegration/tree/master/src/main/resources
 
-Spring Integration
-==================
 
 # Checking out and Building
 
