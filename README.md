@@ -4,9 +4,9 @@ Compatibility: Java 11
 
 Download or clone the project
 
-Import this project as a Gradle project in Eclipse 
+Import this project as a Gradle project in Eclipse
 
-or 
+or
 
 Open this project in Intellij
 
@@ -21,10 +21,6 @@ To check out the project and build from the source, do the following:
 
     git clone git@github.com:jeromecoffin/SpringIntegrationPatterns.git
     ./gradlew clean test
-
-    or
-
-    ./gradlew clean testAll
 
 The latter runs additional tests (those annotated with `@LongRunningIntegrationTest`); it is a more thorough test but takes quite a lot longer to run.
 
