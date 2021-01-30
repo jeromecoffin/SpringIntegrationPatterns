@@ -13,15 +13,15 @@
        
     
     <int-file:inbound-channel-adapter 
-		channel="channelEntree" 
+		channel="mainChannel" 
     	directory="./dataIn"
     	filename-pattern="*.txt">
     		<int:poller id="poller" fixed-delay="1000" />
     </int-file:inbound-channel-adapter>
     
-    <int:channel id="channelEntree"></int:channel>
+    <int:channel id="mainChannel"></int:channel>
     
-    <int-file:outbound-channel-adapter id="filesOut" channel="channelEntree"
+    <int-file:outbound-channel-adapter id="filesOut" channel="mainChannel"
     directory="./dataOut"
     delete-source-files="false"/>
        

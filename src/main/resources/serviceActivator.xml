@@ -11,13 +11,13 @@
            http://www.springframework.org/schema/integration/file/spring-integration-file-5.1.xsd">
 
     <int-file:inbound-channel-adapter 
-		channel="channelEntree" 
+		channel="mainChannel" 
     	directory="./dataIn"
-    	filename-pattern="account.txt">
+    	filename-pattern="user.txt">
     		<int:poller id="poller" fixed-delay="1000" />
     </int-file:inbound-channel-adapter>
     
-    <int-file:file-to-string-transformer input-channel="channelEntree" output-channel="mainChannel"
+    <int-file:file-to-string-transformer input-channel="mainChannel" output-channel="mainChannel"
     delete-files="false" charset="UTF-8"/>
     
     <int:channel id="mainChannel"></int:channel>
