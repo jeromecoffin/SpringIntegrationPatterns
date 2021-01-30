@@ -1,5 +1,8 @@
 # SpringIntegrationPatterns
 
+This project goal is to learn how to combine integration patterns.
+This project was done during the course of Cloud Integration at Efrei and was checked with the teacher.
+
 Compatibility: Java 11
 
 Download or clone the project
