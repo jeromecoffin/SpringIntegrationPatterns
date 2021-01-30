@@ -62,6 +62,8 @@ To import the project into IntelliJ IDEA:
 
 File -> Open... -> and select build.gradle from spring-integration project root directory
 
+![diagram](diagram.png)
+
 
 # Resources
 
