@@ -34,7 +34,7 @@ public class Main {
 		PersonService personService = ctx.getBean(PersonService.class);
 		
 		Person person = new Person();
-		person.setName("Tintin");
+		person.setName("jerome");
 		person = personService.createPerson(person);
 
 		System.out.println(person);
@@ -43,4 +43,3 @@ public class Main {
 	}
 
 }
- 
